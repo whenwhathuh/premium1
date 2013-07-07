@@ -1,6 +1,8 @@
 <%= simple_form_for([@album, @photo], :html => {:multipart => true}, html: { class: 'form-horizontal'}) do |f| %>
   <%= f.error_notification %>
+  <%= f.full_error :image_content_type, class: "alert alert-error" %>
 
+  <%= f.input :image, label: "Upload an image" %>
   <%= f.input :description %>
   <div class="form-actions">
     <%= f.submit class: "btn btn-primary" %>
