@@ -1,21 +1,11 @@
-<%= form_for(@album) do |f| %>
-  <% if @album.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@album.errors.count, "error") %> prohibited this album from being saved:</h2>
+<%= simple_form_for(@album, html: { class: 'form-horizontal'}) do |f| %>
+  <%= f.error_notification %>
 
-      <ul>
-      <% @album.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  
+    <%= f.input :description %>
+    
+  
+  <div class="form-actions">
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>
