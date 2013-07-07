@@ -4,13 +4,18 @@
   <b>Description:</b>
   <%= @album.description %>
 </p>
+
+<% if @album.photos.any? %>
+	<ul>
+		<%= render @photos %>
+	</ul>
+<% end %>
+
 <p>
-  <b>Photos:</b>
-  <%= @album.photos %>
+	<%= link_to "New Photo", new_album_photo_path(@album) %>
 </p>
-<p>
-<%= link_to 'add photo', new_photo_path %>
-</p>
+
+
 
 <%= link_to 'Edit', edit_album_path(@album) %> |
 <%= link_to 'Back', albums_path %>

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Premium1::Application.load_tasks
+Gallery::Application.load_tasks

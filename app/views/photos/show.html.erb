@@ -4,7 +4,11 @@
   <b>Description:</b>
   <%= @photo.description %>
 </p>
+<p>
+  <b>Id:</b>
+  <%= @photo.id %>
+</p>
 
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
+<%= link_to 'Edit', edit_album_photo_path %> |
+<%= link_to 'Back', @album %>
