@@ -1,8 +1,10 @@
-<h1>Photo Gallery</h1>
-
+<div class="hero-unit">
+  <h1>Photo Gallery</h1>
+</div>
 <table>
   <tr>
     <th>Albums</th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,6 +13,7 @@
 <% @albums.each do |album| %>
   <tr>
     <td><%= album.description %></td>
+    <td><%= image_tag album.image(:medium) %></td>
     <td><%= link_to 'Show', album %></td>
     <td><%= link_to 'Edit', edit_album_path(album) %></td>
     <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
