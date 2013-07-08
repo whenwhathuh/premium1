@@ -1,17 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Description:</b>
-  <%= @photo.description %>
-</p>
-<p>
-  <b>Id:</b>
-  <%= @photo.id %>
-</p>
-<p>
-	<%= image_tag @photo.image %>
-</p>
-
-
-<%= link_to 'Edit', edit_album_photo_path %> |
-<%= link_to 'Back', @album %>
+<div class="row">
+    <div class="span6 offset3">
+        <div class="well">
+            <p>
+              <%= @photo.description %>
+            </p>
+            <p>
+							<%= image_tag @photo.image %>
+						</p>
+            <%= link_to 'Edit', edit_album_photo_path %> |
+            <%= link_to 'Back', @album %>
+        </div>
+    </div>
+</div>
