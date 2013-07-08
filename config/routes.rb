@@ -1,9 +1,15 @@
 Gallery::Application.routes.draw do
-  root :to => 'albums#index'
+  
+
+  root :to => 'pages#home'
 
   resources :albums do
     resources :photos
   end
+
+
+  get "about" => "pages#about"
+  get "contact" => "pages#contact"
 
   
 

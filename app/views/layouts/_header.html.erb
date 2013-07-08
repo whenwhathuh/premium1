@@ -6,17 +6,18 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-             <a class="brand" href="/">Home</a>
+             <a class="brand" href="/">Premium Grade Cabinetry</a>
 
                 <div class="nav-collapse">
                     <ul class="nav">
-                        <li>    
-                            <%= link_to 'About',  '#' %>
-                        </li>
+                        <li><%= link_to 'New Album', new_album_path %></li>
+                        <li><%= link_to 'Login',  '#' %></li>
+                        
                     </ul>
                     <ul class="nav pull-right">
-                                <li><%= link_to 'New Album', new_album_path %></li>
-                                <li><%= link_to 'Login',  '#' %></li>
+                        <li><%= link_to 'Gallery',  albums_path %></li>
+                        <li><%= link_to 'Contact',  contact_path %></li>
+                        <li><%= link_to 'About',  about_path %></li>            
                     </ul>
                 </div>
         </div>
