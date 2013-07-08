@@ -1,5 +1,9 @@
 <div class="hero-unit">
 	<h1>Photo Gallery</h1>
+	<% if (@album == nil) %>
+  <% else %>
+  <%= link_to "New Photo", new_album_photo_path(@album) %>
+  <% end %>
 </div>
 <div id='albums'>
   <%= render @albums %>
