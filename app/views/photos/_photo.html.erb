@@ -1,9 +1,6 @@
-
-	
-<tr>
-  <td><%= photo.description %></td>
-  <td><%= image_tag photo.image(:medium) %></td>
-  <td><%= link_to 'Show', album_photo_path(@album, photo) %></td>
-  <td><%= link_to 'Edit', edit_album_photo_path(@album, photo) %></td>
-  <td><%= link_to 'Destroy', album_photo_path(@album, photo), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-</tr>
+<div class="box">
+	<%= link_to (image_tag photo.image(:medium)), album_photo_path(@album, photo) %>
+	<%= photo.description %>
+	<%= link_to 'Edit', edit_album_photo_path(@album, photo) %>
+	<%= link_to 'Destroy', album_photo_path(@album, photo), method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

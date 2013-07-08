@@ -16,6 +16,11 @@
                     </ul>
                     <ul class="nav pull-right">
                                 <li><%= link_to 'New Album', new_album_path %></li>
+                                <% if (@album == nil) %>
+                                    <li></li>
+                                <% else %>
+                                    <li><%= link_to "New Photo", new_album_photo_path(@album) %><li>
+                                <% end %>
                                 <li><%= link_to 'Login',  '#' %></li>
                     </ul>
                 </div>

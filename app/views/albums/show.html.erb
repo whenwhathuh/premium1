@@ -1,20 +1,9 @@
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Albums</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <%= render @photos %>
-  </tbody>
-</table>
-<p>
-	<%= link_to "New Photo", new_album_photo_path(@album) %>
-</p>
+<div id="photos">
+  <%= render @photos %>
+</div>
+
+	
+
 
 
 
