@@ -1,20 +1,13 @@
 Gallery::Application.routes.draw do
   
-
   root :to => 'pages#home'
 
   resources :albums do
     resources :photos
   end
 
-
   get "about" => "pages#about"
   get "contact" => "pages#contact"
-
-  
-
-  
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
