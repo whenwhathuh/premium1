@@ -1,3 +1,37 @@
-<div class='intro'>
-Custom designed, superior quality, hand crafted, woodwork & cabinetry
+
+<div id="myCarousel" class="carousel slide">
+
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    
+    <div class="active item">
+    	<%= image_tag('table1.jpg') %>
+    	<div class="carousel-caption">
+    		<p>From vanities to fireplace surrounds, home theaters to wine cellars, and kitchens to libraries we create one-of-a kind pieces of artistry for your home or business. Our projects include all types of furniture and cabinetry, antique restorations & custom designed woodworking solutions to fill our clients needs.</p>
+    	</div> 
+    </div>
+    
+    <div class="item">
+    	<%= image_tag('window1.jpg') %>
+    	<div class="carousel-caption">
+        <p>We are commited to excellence and make every effort to exceed our clients expectations for all of our projects. We use only the finest materials and finishes to create the custom piece of your desires.</p>
+    	</div>
+    </div>
+    
+    <div class="item">
+      <%= image_tag('kitchen.jpg') %>
+    	<div class="carousel-caption">
+        <p>Custom Millwork and Carving.  We Design, Build and Install!</p>
+    	</div>
+    </div>
+  
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
 </div>
+<script>$('#myCarousel').carousel({
+    interval: 5000
+});
+</script>
