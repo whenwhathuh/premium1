@@ -1,7 +1,7 @@
-$navbarBackgroundHighlight: #ff462b;
-$navbarBackground: #b21c06;
-$navbarBrandColor: #12ff90;
-$navbarLinkColor: #00b25f;
+$navbarBackgroundHighlight: black;
+$navbarBackground: black;
+$navbarBrandColor: white;
+$navbarLinkColor: gray;
 
 
 
@@ -10,7 +10,7 @@ $navbarLinkColor: #00b25f;
 
  body{
     padding-top: 60px;
-    background-color: #00b25f
+    
 } 
 
 .navbar-inner{
@@ -47,6 +47,13 @@ $navbarLinkColor: #00b25f;
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+
+.hero-unit {
+
+}
+
+
+
 
 
 
